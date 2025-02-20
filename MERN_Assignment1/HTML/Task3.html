@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlink Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 60%;
+            margin: 50px auto;
+        }
+        .box {
+            border: 1px solid black;
+            padding: 15px;
+            background-color: #f2f2f2;
+            display: inline-block;
+        }
+        a {
+            text-decoration: none;
+            color: blue;
+            margin: 0 5px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+            <p>Click any of the following links</p>
+            <a href="https://www.example.com" target="_blank">Opens in New</a> |
+            <a href="https://www.example.com" target="_self">Opens in Self</a> |
+            <a href="https://www.example.com" target="_parent">Opens in Parent</a> |
+            <a href="https://www.example.com" target="_top">Opens in Body</a> |
+            <a href="mailto:someone@example.com">Send email</a>
+        </div>
+    </div>
+
+</body>
+</html>

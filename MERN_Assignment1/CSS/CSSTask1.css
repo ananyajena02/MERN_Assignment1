@@ -1,0 +1,31 @@
+/* Style for the Table */
+table {
+    width: 60%;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 2px;
+    background-color: lightblue;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+/* Style for Table Headers */
+th {
+    padding: 10px;
+    border: 2px solid black;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #008CBA;
+    color: white;
+    border-radius: 15px;
+}
+
+/* Style for Table Data */
+td {
+    padding: 10px;
+    border: 2px solid black;
+    font-size: 16px;
+    border-radius: 15px;
+}

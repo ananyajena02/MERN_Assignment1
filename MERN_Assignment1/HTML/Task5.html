@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            text-align: center;
+        }
+        h2 {
+            color: blue;
+            font-size: 24px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid black;
+            background-color: #f9f9f9;
+        }
+        td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid black;
+        }
+        .checkbox-group {
+            text-align: left;
+        }
+        .checkbox-group input {
+            width: auto;
+        }
+        .register-btn {
+            background-color: #dcdcdc;
+            padding: 7px 15px;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+        .register-btn:hover {
+            background-color: #c0c0c0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Registration form</h2>
+        <form>
+            <table>
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td>Re-enter Password</td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender"> Male
+                        <input type="radio" name="gender"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><textarea rows="3"></textarea></td>
+                </tr>
+                <tr>
+                    <td>State</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td>
+                        <select>
+                            <option>Choose your country</option>
+                            <option>India</option>
+                            <option>USA</option>
+                            <option>UK</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Languages known</td>
+                    <td class="checkbox-group">
+                        <input type="checkbox"> English
+                        <input type="checkbox"> Kannada
+                        <input type="checkbox"> Hindi
+                        <input type="checkbox"> Telugu
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox"> Hereby I declare all the given details are true
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <a href="#">Log in to <span style="color: blue;">Ethnus</span> website</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit" class="register-btn">Register</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+</html>

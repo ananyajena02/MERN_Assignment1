@@ -1,0 +1,36 @@
+.card-image {
+    position: relative;
+}
+
+.card-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* 🔹 Apply Dark Overlay Effect Only on First Card */
+.card:first-child .card-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    border-radius: 10px 10px 0 0;
+}
+
+/* 🔹 Change Overlay on Hover */
+.card:first-child:hover .card-image::after {
+    background: rgba(0, 0, 0, 0.7); /* Darker overlay on hover */
+}
+
+/* 🔹 Style the Title */
+.card:first-child .card-title {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+}

@@ -1,0 +1,46 @@
+/* Vertical Navigation Bar */
+.vertical-nav {
+    width: 200px;
+    border: 2px solid black;
+    background-color: lightblue;
+}
+
+.vertical-nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+}
+
+.vertical-nav a:first-child {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+}
+
+/* Horizontal Navigation Bar */
+.horizontal-nav {
+    width: fit-content;
+    border: 2px solid black;
+    background-color: lightgray;
+    display: flex;
+}
+
+.horizontal-nav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+    border-right: 2px solid black;
+}
+
+.horizontal-nav a:first-child {
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+}
+
+.horizontal-nav a:last-child {
+    border-right: none;
+}
